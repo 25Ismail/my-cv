@@ -1,0 +1,74 @@
+/* Grundläggande stilar för hela sidan */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Layout för hela appen */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Navbar */
+  .navbar-container ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background-color: #444;
+  }
+  
+  .navbar-container ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar-container ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Main Content */
+  main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  .footer-container {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .footer-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-container ul li {
+    margin: 0 10px;
+  }
+  
+  .footer-container ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
