@@ -1,74 +1,172 @@
-/* Grundläggande stilar för hela sidan */
+/* General styling for the entire page */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  /* Layout för hela appen */
-  .app-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  /* Header */
-  header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  /* Navbar */
-  .navbar-container ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    background-color: #444;
-  }
-  
-  .navbar-container ul li {
-    margin: 0 15px;
-  }
-  
-  .navbar-container ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Main Content */
-  main {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Footer */
-  .footer-container {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .footer-container ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-container ul li {
-    margin: 0 10px;
-  }
-  
-  .footer-container ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
+  font-family: Arial, sans-serif; /* Sets a clean, readable font */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333; /* Dark gray text color */
+}
+
+/* Main layout for the app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full height coverage */
+}
+
+/* Header styling */
+.app-header {
+  display: flex;
+  justify-content: space-between; /* Spaces elements evenly */
+  align-items: center;
+  background-color: #333; /* Dark background */
+  color: white; /* White text */
+  padding: 15px 20px;
+  border-bottom: 2px solid #007bff; /* Adds a blue border for emphasis */
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 24px; /* Sets header font size */
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  background-color: #007bff; /* Primary blue color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px; /* Slightly rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Navigation bar */
+.navbar-container ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  background-color: #444; /* Slightly lighter than header */
+}
+
+.navbar-container ul li {
+  margin: 0 15px;
+}
+
+.navbar-container ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer styling */
+.footer-container {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container ul li {
+  margin: 0 10px;
+}
+
+.footer-container ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Dark mode styling */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dark-mode .app-header {
+  background-color: #222;
+}
+
+.dark-mode .theme-toggle {
+  background-color: #ffcc00; /* Yellow for contrast */
+  color: black;
+}
+
+.dark-mode .theme-toggle:hover {
+  background-color: #e6b800;
+}
+
+.dark-mode .app-container,
+.dark-mode .projects-container,
+.dark-mode .contact-container,
+.dark-mode .about-container {
+  background-color: #252525;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .project-card,
+.dark-mode .contact-card,
+.dark-mode .about-text,
+.dark-mode .navbar-container ul,
+.dark-mode .footer-container,
+.dark-mode .project-link,
+.dark-mode .contact-info li,
+.dark-mode .form-label {
+  background-color: #333;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .project-card p {
+  color: rgb(218, 217, 217);
+}
+
+.dark-mode .contact-container h2,
+.dark-mode .contact-card h3 {
+  color: rgb(218, 217, 217);
+}
+
+.dark-mode .about-text h2,
+.dark-mode .about-text p {
+  color: rgb(218, 217, 217);
+}
+
+.dark-mode .project-link:hover {
+  background-color: #0056b3;
+}
+
+.dark-mode .form-input,
+.dark-mode .form-textarea {
+  background-color: #444;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode .submit-button {
+  background: #007bff;
+  color: white;
+}
+
+.dark-mode .submit-button:hover {
+  background: #0056b3;
+}

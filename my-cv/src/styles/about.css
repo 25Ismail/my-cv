@@ -1,42 +1,41 @@
-/* Om mig-sektion styling */
+/* Styling for the 'About Me' section */
 .about-container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    text-align: center;
-    background: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  .about-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #007bff;
-  }
-  
-  .about-text {
-    text-align: left;
-  }
-  
-  .about-text h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .about-text p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-  }
-  
+  max-width: 900px; /* Limits the maximum width of the section */
+  margin: 40px auto; /* Centers the container horizontally */
+  padding: 20px; /* Adds spacing inside the container */
+  text-align: center; /* Centers text content */
+  background: #fff; /* Sets background color to white */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+  border-radius: 8px; /* Rounds the corners */
+}
+
+.about-content {
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Aligns items in the center */
+  flex-direction: column; /* Stacks items vertically */
+  gap: 20px; /* Adds spacing between elements */
+}
+
+.profile-image {
+  width: 150px; /* Sets fixed width for profile image */
+  height: 150px; /* Sets fixed height for profile image */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the container properly */
+  border: 3px solid #6f6f6f; /* Adds a blue border around the image */
+}
+
+.about-text {
+  text-align: left; /* Aligns text content to the left */
+}
+
+.about-text h2 {
+  color: #333; /* Sets text color to dark gray */
+  font-size: 24px; /* Increases font size for heading */
+  margin-bottom: 10px; /* Adds spacing below the heading */
+}
+
+.about-text p {
+  font-size: 16px; /* Sets font size for paragraph text */
+  color: #555; /* Sets text color to medium gray */
+  line-height: 1.6; /* Improves readability by increasing line spacing */
+}

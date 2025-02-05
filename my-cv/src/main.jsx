@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App"; // Import the App component
-import "./styles/main.css"; // Import global styles
+import { HashRouter } from "react-router-dom"; // Use HashRouter for GitHub Pages support
+import App from "./App";
+import "./styles/main.css";
 
+// Render the application inside the root element
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );

@@ -1,6 +1,8 @@
 import React from "react";
-import "../styles/projects.css"; // Importerar CSS-fil för styling
+import ProjectCard from "../components/ProjectCard";
+import "../styles/projects.css"; // Importing CSS file for styling
 
+// List of completed projects with titles, descriptions, and GitHub links.
 const projects = [
   {
     title: "Prototyp enligt kundbeskrivning",
@@ -22,6 +24,7 @@ const projects = [
   },
 ];
 
+// List of upcoming projects with titles and descriptions.
 const upcomingProjects = [
   {
     title: "Filmrekommendationssida",
@@ -29,7 +32,7 @@ const upcomingProjects = [
       "En webbplats där du kan välja filmer baserat på vilka känslor du vill uppleva.",
   },
   {
-    title: "speltips",
+    title: "Speltips",
     description:
       "En app där användaren svarar på några enkla frågor om sin personlighet och får spelrekommendationer baserat på svaren.",
   },
@@ -40,34 +43,23 @@ const upcomingProjects = [
   },
 ];
 
+// Projects component that displays both completed and upcoming projects.
 const Projects = () => {
   return (
     <div className="projects-container">
       <h2>Mina Projekt</h2>
       <div className="projects-grid">
+        {/* Render completed projects */}
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              Se på GitHub
-            </a>
-          </div>
+          <ProjectCard key={index} {...project} />
         ))}
       </div>
 
       <h2>Kommande Projekt</h2>
       <div className="projects-grid">
+        {/* Render upcoming projects */}
         {upcomingProjects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-          </div>
+          <ProjectCard key={index} {...project} />
         ))}
       </div>
     </div>
