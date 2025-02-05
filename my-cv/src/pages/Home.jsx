@@ -8,11 +8,10 @@ const About = () => {
       <div className="about-content">
         {/* Profile image of the developer */}
         <img
-          src="/images/Screenshot.jpg"
+          src="/images/avatar.jpg"
           alt="Profile Picture"
           className="profile-image"
         />
-
         <div className="about-text">
           <h2>Om Mig</h2>
           {/* Short introduction about the developer */}
