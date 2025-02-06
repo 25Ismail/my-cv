@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/about.css"; // Importing CSS file for styling
+import profilePic from "../assets/avatar.jpg";
 
 // About component that displays information about the developer.
 const About = () => {
@@ -7,11 +8,8 @@ const About = () => {
     <div className="about-container">
       <div className="about-content">
         {/* Profile image of the developer */}
-        <img
-          src="/images/avatar.jpg"
-          alt="Profile Picture"
-          className="profile-image"
-        />
+        <img src={profilePic} alt="Profile Picture" className="profile-image" />
+
         <div className="about-text">
           <h2>Om Mig</h2>
           {/* Short introduction about the developer */}
