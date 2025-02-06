@@ -55,11 +55,23 @@ This is a **single-page React application** showcasing my portfolio and CV. It i
 - **Theme State Management**: Handles dark/light mode toggling.
 - **Contact Form State**: Stores and manages messages sent via the contact form.
 
----
+### **5. useRef Hook**
+
+- `useRef` is used in **Contact.jsx** to automatically focus the name input field when the page loads.
+- This improves user experience by allowing users to start typing immediately.
+- Example of implementation:
+
+```javascript
+useEffect(() => {
+  if (nameInputRef.current) {
+    nameInputRef.current.focus();
+  }
+}, []);
+
 
 ## **Deployment**
 
-The application is deployed on **GitHub Pages**.  
+The application is deployed on **GitHub Pages**.
 👉 **Live Demo**: [View the project here](https://25ismail.github.io/my-cv)
 
 ---
@@ -69,3 +81,29 @@ The application is deployed on **GitHub Pages**.
 - The codebase follows best practices for readability and maintainability:
   - Clear structure for components, pages, and state management.
   - Inline comments are included to explain complex logic.
+
+
+  ## **How to Run the Project**
+
+## Installation & Setup
+
+1. Clone the repository:
+git clone https://github.com/25Ismail/my-cv.git
+
+2. Navigate to the project directory:
+   cd my-cv
+
+3. Install dependencies:
+   npm install
+
+4. Start the development server:
+   npm start
+
+---
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out via email or through my portfolio website.
+
+🚀 Made with ❤️ using React.
+```
