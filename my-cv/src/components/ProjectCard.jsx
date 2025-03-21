@@ -1,15 +1,17 @@
 import React from "react";
 
 // ProjectCard component displays individual project details.
-// It takes in title, description, and an optional link as props.
-const ProjectCard = ({ title, description, link }) => {
+// It takes in title, description, an optional link, and an optional linkLabel as props.
+const ProjectCard = ({ title, description, link, linkLabel }) => {
   return (
     <div className="project-card">
       {/* Display project title */}
       <h3>{title}</h3>
+
       {/* Display project description */}
       <p>{description}</p>
-      {/* If a link exists, display a GitHub link */}
+
+      {/* If a link exists, display a link with the custom label or fallback */}
       {link && (
         <a
           href={link}
@@ -17,7 +19,7 @@ const ProjectCard = ({ title, description, link }) => {
           rel="noopener noreferrer"
           className="project-link"
         >
-          Se på GitHub
+          {linkLabel || "Se projekt"}
         </a>
       )}
     </div>

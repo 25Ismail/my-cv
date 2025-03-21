@@ -39,3 +39,28 @@
   color: #555; /* Sets text color to medium gray */
   line-height: 1.6; /* Improves readability by increasing line spacing */
 }
+
+.tech-html {
+  color: rgb(226, 124, 0);
+  font-weight: bold;
+}
+
+.tech-css {
+  color: #4271de;
+  font-weight: bold;
+}
+
+.tech-js {
+  color: #d3bd30;
+  font-weight: bold;
+}
+
+.tech-react {
+  color: #36a3c2;
+  font-weight: bold;
+}
+
+.tech-ux {
+  color: #9b59b6;
+  font-weight: bold;
+}

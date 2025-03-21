@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/about.css"; // Importing CSS file for styling
-import profilePic from "../assets/avatar.jpg";
+import profilePic from "../assets/ismail.png";
 
 // About component that displays information about the developer.
 const About = () => {
@@ -14,21 +14,26 @@ const About = () => {
           <h2>Om Mig</h2>
           {/* Short introduction about the developer */}
           <p>
-            Jag heter Ismail och är en passionerad frontendutvecklare med
-            erfarenhet av HTML, CSS, JavaScript och React. Jag brinner för att
-            skapa responsiva och användarvänliga webbapplikationer.
+            Jag heter Ismail och är en engagerad frontendstudent med erfarenhet
+            av <span className="tech-html">HTML</span>,{" "}
+            <span className="tech-css">CSS</span>,{" "}
+            <span className="tech-js">JavaScript</span>,{" "}
+            <span className="tech-react">React</span> och{" "}
+            <span className="tech-ux">UX-design</span>. Jag älskar att bygga
+            responsiva och användarvänliga webbapplikationer med fokus på
+            tydlighet och design.
           </p>
           {/* Additional information about skills and experience */}
           <p>
-            Jag har tidigare arbetat inom olika tekniska områden och har en
-            stark förståelse för hur man bygger effektiva och skalbara
-            lösningar. Mina styrkor ligger i problemlösning, design och att
-            skapa smidiga användarupplevelser.
+            Som student utvecklar jag ständigt mina färdigheter genom både
+            utbildning och egna projekt. Jag brinner för problemlösning, att
+            skapa smidiga användarupplevelser och att hela tiden lära mig ny
+            teknik.
           </p>
           {/* Personal interests */}
           <p>
-            När jag inte kodar gillar jag att utforska ny teknik och förbättra
-            mina färdigheter genom att arbeta med egna projekt.
+            På fritiden utforskar jag ny teknik och bygger små projekt för att
+            utmana mig själv och lära mig mer.
           </p>
         </div>
       </div>
