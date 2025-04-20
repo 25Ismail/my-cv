@@ -45,7 +45,7 @@ function AppHeader() {
 
   return (
     <header className="app-header">
-      <h1>Mitt CV</h1>
+      <h1>Portfolio</h1>
       <button className="theme-toggle" onClick={() => dispatch(toggleTheme())}>
         {darkMode ? "☀ Ljus läge" : "🌙 Mörkt läge"}
       </button>
