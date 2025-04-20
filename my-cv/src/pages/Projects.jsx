@@ -32,6 +32,13 @@ const projects = [
     link: "https://www.figma.com/proto/nZ0WfgN8rlikLCfYr5q5D2/Examination?node-id=18-2&p=f&t=kO3BVWoOklPeuXN0-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=18%3A2&show-proto-sidebar=1",
     linkLabel: "Visa i Figma",
   },
+  {
+    title: "Airbean – Kaffe med drönarleverans",
+    description:
+      "Ett backendprojekt i grupp där vi skapade ett REST-API med Express och SQLite för en kaffeleveransapp. Jag arbetade med endpoints, databas, middleware och teknisk dokumentation.",
+    link: "https://github.com/miltonlindh/Grupp-6-Airbean",
+    linkLabel: "Se på GitHub",
+  },
 ];
 
 // List of upcoming projects with titles and descriptions.
